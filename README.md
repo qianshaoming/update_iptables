@@ -1,8 +1,10 @@
 使用ansible批量修改iptables
 
 1、在被控端安装iptables
-yum install iptables-services -y
+yum install iptables-services -y  #安装防火墙
+
 systemctl start iptables.service  #启动iptables防火墙
+
 systemctl enable iptables.service #设置防火墙开机启动
 
 2、拷贝脚本到被控端
